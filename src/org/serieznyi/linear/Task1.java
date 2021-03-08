@@ -2,12 +2,12 @@ package org.serieznyi.linear;
 
 import org.jetbrains.annotations.NotNull;
 
-public class Function2 {
+public class Task1 {
     public static void main(String @NotNull [] args) {
         assertArguments(args);
 
         System.out.println("Пытаемся решить функцию");
-        System.out.println("(b + sqr(b ^ 2 + 4 * a * c) / 2 * a ) - a ^ 3 * c + b ^ -2");
+        System.out.println("z = ((a - 3) * b / 2) + c");
 
         double a = Double.parseDouble(args[0]);
         double b = Double.parseDouble(args[1]);
@@ -15,16 +15,11 @@ public class Function2 {
 
         System.out.printf("a = %s, b = %s, c = %s\n", a, b, c);
 
-        System.out.printf(
-                "(%s + sqr(%s ^ 2 + 4 * %s * %s) / 2 * %s ) - %s ^ 3 * %s + %s ^ -2\n",
-                b, b, a, c, a, a, c, b
-        );
+        System.out.printf("z = ((%s - 3) * %s / 2) + %s", a, b, c);
 
-        double divisible = b + Math.sqrt(Math.pow(b, 2) + 4 * a * c);
-        double divisor = 2 * a;
-        double result = divisible / divisor - Math.pow(a, 3) * c + Math.pow(b, -2);
+        double result = ((a - 3) * b / 2) + c;
 
-        System.out.println(result);
+        System.out.printf("z = %s\n", result);
     }
 
     private static void assertArguments(String[] args) {

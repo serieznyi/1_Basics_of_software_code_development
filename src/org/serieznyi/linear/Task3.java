@@ -2,7 +2,7 @@ package org.serieznyi.linear;
 
 import org.jetbrains.annotations.NotNull;
 
-public class Function3 {
+public class Task3 {
     public static void main(String @NotNull [] args) {
         assertArguments(args);
 

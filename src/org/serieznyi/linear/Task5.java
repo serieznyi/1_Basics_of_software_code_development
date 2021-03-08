@@ -6,7 +6,7 @@ import java.time.Duration;
 import java.util.Date;
 import java.util.regex.Pattern;
 
-public class Function5 {
+public class Task5 {
 
     public static void main(String @NotNull [] args) {
         assertArguments(args);

@@ -4,7 +4,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.regex.Pattern;
 
-public class Function4 {
+public class Task4 {
 
     public static final Pattern DIGIT_PATTERN = Pattern.compile("^[\\d]{3}\\.[\\d]{3}$");
 
