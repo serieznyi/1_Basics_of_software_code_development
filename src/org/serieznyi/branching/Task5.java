@@ -8,7 +8,7 @@ public class Task5 {
         assertArguments(args);
 
         int x = Integer.parseInt(args[0]);
-        double result = 0.0;
+        double result;
 
         if (x <= 3) {
             System.out.println("Вычисляем функцию: x^2 - 3*x + 9");

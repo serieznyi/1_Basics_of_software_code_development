@@ -15,7 +15,7 @@ public class Task1 {
 
         System.out.printf("Вы указали следующие углы: a=%s, b=%s\n", x, y);
 
-        if (isTriangleCanExists(x, y)) {
+        if (!isTriangleCanExists(x, y)) {
             System.out.println("Треугольник с указанными углами не может существовать");
             return;
         }
@@ -24,13 +24,15 @@ public class Task1 {
 
         if (isTriangleWithStraightAngle(x, y)) {
             System.out.println("Треугольник с указанными углами является прямоугольным");
+        } else {
+            System.out.println("Треугольник с указанными углами НЕ является прямоугольным");
         }
     }
 
     private static boolean isTriangleCanExists(int angleOne, int angleTwo) {
         int lastAngle = TRIANGLE_ANGLE_MAX_SUM - angleOne - angleTwo;
 
-        return lastAngle < 0;
+        return lastAngle > 0;
     }
 
     private static boolean isTriangleWithStraightAngle(int angleOne, int angleTwo) {

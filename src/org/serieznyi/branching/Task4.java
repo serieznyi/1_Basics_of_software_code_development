@@ -17,15 +17,19 @@ public class Task4 {
 
         System.out.printf("Кирпич: ширина = %s, высота = %s, длина = %s\n", brickWidth, brickHeight, brickLength);
 
-        int minBrickSide = Math.min(brickWidth, Math.min(brickHeight, brickLength));
-        int minHoleSide = Math.min(holeWidth, holeHeight);
-
-        // Минимальная сторона кирпича меньше или равна минимальной стороне отверстия
-        if (minBrickSide <= minHoleSide) {
+        if (
+                (holeWidth >= brickHeight   && holeHeight >= brickWidth) ||
+                (holeWidth >= brickWidth    && holeHeight >= brickHeight) ||
+                (holeWidth >= brickHeight   && holeHeight >= brickLength) ||
+                (holeWidth >= brickLength   && holeHeight >= brickHeight) ||
+                (holeWidth >= brickLength   && holeHeight >= brickWidth) ||
+                (holeWidth >= brickWidth    && holeHeight >= brickLength)
+        ) {
             System.out.println("Указанный кирпич может пройти в отверстие");
         } else {
             System.out.println("Указанный кирпич НЕ может пройти в отверстие");
         }
+
     }
 
     private static void assertArguments(String[] args) {

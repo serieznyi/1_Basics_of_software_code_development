@@ -18,7 +18,7 @@ public class Task2 {
 
         System.out.printf("Пытаемся найти max {min(%s, %s), min(%s, %s)}\n", a, b, c, d);
 
-        int max = Math.max(Math.max(a, b), Math.max(c, d));
+        int max = Math.max(Math.min(a, b), Math.min(c, d));
 
         System.out.printf("Результат: %s\n", max);
     }

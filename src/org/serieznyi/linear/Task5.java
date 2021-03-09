@@ -2,10 +2,6 @@ package org.serieznyi.linear;
 
 import org.jetbrains.annotations.NotNull;
 
-import java.time.Duration;
-import java.util.Date;
-import java.util.regex.Pattern;
-
 public class Task5 {
 
     public static void main(String @NotNull [] args) {
@@ -13,10 +9,9 @@ public class Task5 {
 
         int secondsArg = Integer.parseInt(args[0]);
 
-        Duration dur = Duration.ofSeconds(secondsArg);
-        long hours = dur.toHours();
-        int minutes = dur.toMinutesPart();
-        int seconds = dur.toSecondsPart();
+        long hours = secondsArg / 60 / 60;
+        int minutes = secondsArg / 60;
+        int seconds = secondsArg % 60;
 
         System.out.printf("Вы указали число: %s\n", secondsArg);
 

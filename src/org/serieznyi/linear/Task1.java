@@ -15,7 +15,7 @@ public class Task1 {
 
         System.out.printf("a = %s, b = %s, c = %s\n", a, b, c);
 
-        System.out.printf("z = ((%s - 3) * %s / 2) + %s", a, b, c);
+        System.out.printf("z = ((%s - 3) * %s / 2) + %s\n", a, b, c);
 
         double result = ((a - 3) * b / 2) + c;
 

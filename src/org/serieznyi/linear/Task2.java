@@ -20,7 +20,7 @@ public class Task2 {
                 b, b, a, c, a, a, c, b
         );
 
-        double divisible = b + Math.sqrt(Math.pow(b, 2) + 4 * a * c);
+        double divisible = b + Math.sqrt(Math.pow(b, 2) + (4 * a * c));
         double divisor = 2 * a;
         double result = divisible / divisor - Math.pow(a, 3) * c + Math.pow(b, -2);
 
