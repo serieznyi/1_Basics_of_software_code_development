@@ -53,7 +53,7 @@ public class Task8 {
         }
 
         for (Character sameDigit : sameDigits) {
-            System.out.print(sameDigit);
+            System.out.print(sameDigit + " ");
         }
 
         if (sameDigits.isEmpty()) {

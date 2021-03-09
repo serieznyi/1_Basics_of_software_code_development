@@ -2,6 +2,8 @@ package org.serieznyi.loop;
 
 import org.jetbrains.annotations.NotNull;
 
+import java.math.BigInteger;
+
 public class Task1 {
 
     public static void main(String @NotNull [] args) {
@@ -9,10 +11,10 @@ public class Task1 {
 
         int number = Integer.parseInt(args[0]);
 
-        long sum = 0;
+        BigInteger sum = BigInteger.ONE;
 
         for (int i = 1; i <= number; i++) {
-            sum += i;
+            sum = sum.add(BigInteger.valueOf(i));
         }
 
         System.out.printf("Сумма чисел от 1 до %s равна %s\n", number, sum);

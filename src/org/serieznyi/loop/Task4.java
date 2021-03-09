@@ -10,7 +10,9 @@ public class Task4 {
         BigInteger bigComposition = BigInteger.ONE;
 
         for (int i = 1; i <= 200; i++) {
-            bigComposition = bigComposition.multiply(BigInteger.valueOf((long) Math.pow(i, 2)));
+            long powOfI = (long) Math.pow(i, 2);
+
+            bigComposition = bigComposition.multiply(BigInteger.valueOf(powOfI));
         }
 
         System.out.printf("Произведение квадратов первых двухсот чисел равно %s\n", bigComposition);
