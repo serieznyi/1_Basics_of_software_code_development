@@ -22,7 +22,7 @@ public class Task4 {
     }
 
     private static void assertArguments(String[] args) {
-        String errorMessage = "Укажите вещественное число состоящее из 3 разрядов в вещественной и дробной частях";
+        String errorMessage = "Укажите вещественное число состоящее из 3 разрядов в целой и дробной частях";
 
         if (args.length < 1) {
             throw new IllegalArgumentException(errorMessage);

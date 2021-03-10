@@ -31,7 +31,7 @@ public class Task1 {
             try {
                 Double.parseDouble(arg);
             } catch (NumberFormatException e) {
-                throw new IllegalArgumentException("Переменные должны быть целочисленными или вещественными числами");
+                throw new IllegalArgumentException("Переменные должны вещественными числами");
             }
         }
     }
